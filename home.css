@@ -1,0 +1,153 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: #fff; /* Set all text color to white */
+}
+
+body {
+    background-color: #000; /* Set the entire body background to black */
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    width: 60%;
+    margin: 0 auto;
+}
+.images{
+    max-height: 10%;
+}
+.navigation {
+    position: sticky;
+    top: 0;
+    background-color: #000; /* Set navigation background to black */
+    padding: 10px 0;
+    z-index: 1000; /* Ensure it stays above other content */
+}
+.ColoumnWiseFlex{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 2rem;
+    padding: 2rem 0;
+    flex-direction: column;
+
+}
+
+.portfolio-item{
+    
+    background-color: #d55858;
+     /* Adjust width as needed */
+    padding: 20px; /* Adjust padding as needed */
+    
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3); /* Shadow effect: horizontal offset, vertical offset, blur radius, color */
+    border-radius: 20px; /* Rounded corners */
+}
+.flex {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 2rem;
+    padding: 2rem 0;
+    
+}
+
+header {
+    background: #000; /* Set header background to black */
+    color: #fff;
+    padding: 1rem 0;
+}
+
+header h1 {
+    text-align: center;
+}
+
+header nav ul {
+    list-style: none;
+    text-align: center;
+}
+
+header nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+header nav ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+section {
+    padding: 2rem 0;
+    background-color:#bb4444 ;
+}
+
+section h2 {
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+section#about {
+    background-color: #aa3333;
+    padding: 2rem;
+    text-align: center; /* Center align text */
+}
+
+section#about p {
+    margin-bottom: 1rem; /* Adjust bottom margin for paragraphs */
+}
+section#contact{
+    background-color: #b83e3e;
+    padding: 2rem;
+    text-align: center; /* Center align text */
+}
+section#Education{
+    background-color: #aa3333;
+}
+.portfolio-item {
+    margin-bottom: 1rem;
+}
+
+form {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+form label {
+    display: block;
+    margin: 0.5rem 0;
+}
+
+form input,
+form textarea {
+    width: 100%;
+    padding: 0.5rem;
+    margin-bottom: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+form button {
+    display: block;
+    width: 100%;
+    padding: 0.5rem;
+    background: #333;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+form button:hover {
+    background: #555;
+}
+
+footer {
+    background: #333;
+    color: #fff;
+    text-align: center;
+    padding: 1rem 0;
+}
