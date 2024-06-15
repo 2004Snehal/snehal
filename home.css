@@ -46,6 +46,9 @@ body {
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3); /* Shadow effect: horizontal offset, vertical offset, blur radius, color */
     border-radius: 20px; /* Rounded corners */
 }
+.portfolio-item:hover {
+    background-color: #b04444; /* Darker shade of the original background color */
+}
 .flex {
     display: flex;
     align-items: center;
@@ -107,6 +110,11 @@ section#contact{
 section#Education{
     background-color: #aa3333;
 }
+section#Entrepreneurial-Experiences{
+    background-color: #b83e3e;
+    padding: 2rem;
+    text-align: center; /* Center align text */
+}
 .portfolio-item {
     margin-bottom: 1rem;
 }
@@ -150,4 +158,25 @@ footer {
     color: #fff;
     text-align: center;
     padding: 1rem 0;
+}
+.read-more-label {
+    display: block;
+    color: rgb(255, 255, 255);
+    cursor: pointer;
+    margin-bottom: 10px;
+}
+
+.read-more-content {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease;
+}
+
+input[type="checkbox"] {
+    display: none;
+}
+
+input[type="checkbox"]:checked ~ .read-more-content {
+    max-height: 500px; /* Adjust this value based on the content height */
+    transition: max-height 0.5s ease;
 }
